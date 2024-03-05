@@ -1000,8 +1000,25 @@ lo permite. Estas directivas pueden ir en los **archivos de configuración de lo
 
 1. Instala git y clona el siguiente repositorio:
 **https://github.com/jmoba/web_optimizacion.git**
+![pruebas](./imagenes/img160.png)
 
 2. Crea un nuevo **virtual host** llamado **optimizacion.com** para dicha web.
+![pruebas](./imagenes/img161.png)
+![pruebas](./imagenes/img162.png)
+
+![pruebas](./imagenes/img163.png)
+![pruebas](./imagenes/img164.png)
+![pruebas](./imagenes/img165.png)
+![pruebas](./imagenes/img166.png)
+![pruebas](./imagenes/img167.png)
+![pruebas](./imagenes/img168.png)
+![pruebas](./imagenes/img169.png)
+![pruebas](./imagenes/img170.png)
+![pruebas](./imagenes/img171.png)
+
+
+
+
 
 3. Realiza las siguientes optimizaciones mediante un archivo **.htaccess** en la carpeta principal del
 proyecto web. Recuerda instalar los módulos indicados previamente mediante el comando **a2enmod**.
