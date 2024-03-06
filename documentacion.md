@@ -1017,11 +1017,11 @@ lo permite. Estas directivas pueden ir en los **archivos de configuración de lo
 ![pruebas](./imagenes/img171.png)
 
 
-
-
-
 3. Realiza las siguientes optimizaciones mediante un archivo **.htaccess** en la carpeta principal del
 proyecto web. Recuerda instalar los módulos indicados previamente mediante el comando **a2enmod**.
+![pruebas](./imagenes/img172.png)
+![pruebas](./imagenes/img173.png)
+![pruebas](./imagenes/img174.png)
 
 4. Especificar la caché del navegador (mod_expires)
 ```bash
@@ -1038,11 +1038,17 @@ proyecto web. Recuerda instalar los módulos indicados previamente mediante el c
     ExpiresDefault "access 1 year"
 <ifModule>
 ```
+![pruebas](./imagenes/img175.png)
+
 Muestra los archivos que has creado mediante **cat** y las estructura de archivos del sitio Web
 mediante **tree**. Crea capturas con la herramienta de desarrolladores de tu navegador, sección Redes.
 Recuerda que en la primera captura debes borrar las cookies. Graba la conexión para tener los datos
 de tiempo. Deberas crear dos capturas una antes y otra después de cargar la caché en el navegador.
 Debe observarse que el tiempo es menor en la segunda captura.
+![pruebas](./imagenes/img176.png)
+![pruebas](./imagenes/img177.png)
+![pruebas](./imagenes/img178.png)
+
 
 5. Comprimir las comunicaciones (mod_deflate)
 ```bash
@@ -1056,7 +1062,7 @@ Debe observarse que el tiempo es menor en la segunda captura.
 </ifModule>
 ```
 ```bash
-<IfModule mod_deflate.c>
+<ifModule mod_deflate.c>
     AddOutputFilterByType DEFLATE text/html
     AddOutputFilterByType DEFLATE text/css
     AddOutputFilterByType DEFLATE text/javascript
@@ -1082,11 +1088,16 @@ Debe observarse que el tiempo es menor en la segunda captura.
     BrowserMatch ^Mozilla/4 gzip-only-text/html
     BrowserMatch ^Mozilla/4\.0[678] no-gzip
     BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
-</IfModule>
+</ifModule>
 ```
+![pruebas](./imagenes/img179.png)
+![pruebas](./imagenes/img180.png)
+
 Crea una tercera captura con la herramienta de desarrolladores de tu navegador, sección Redes.
 Graba la conexión para tener los datos de tiempo. Debe observarse que el tiempo es menor que en
 las anteriores capturas. Revisa las cookies si no funciona como se espera.
+
+![pruebas](./imagenes/img181.png)
 
 6. OPCIONAL: Comprimir las comunicaciones (mod_gzip). Método más antiguo.
 ```bash
@@ -1098,6 +1109,10 @@ las anteriores capturas. Revisa las cookies si no funciona como se espera.
     mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
 </ifModule>
 ```
+![pruebas](./imagenes/img179.png)
+![pruebas](./imagenes/img182.png)
+![pruebas](./imagenes/img183.png)
+
 # ANEXOS: Ampliación
 # 13.- Seguridad
 Información extraida de la web: https://plataforma.josedomingo.org/pledin/cursos/apache24
